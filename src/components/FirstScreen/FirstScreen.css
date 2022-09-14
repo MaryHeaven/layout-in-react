@@ -1,0 +1,88 @@
+.h1 {
+  width: 1008px;
+  height: 320px;
+  z-index: 3;
+  /* position: absolute; */
+  color: #fff;
+  font-family: 'RubikMedium';
+  font-size: 144px;
+  margin: 96px 0px 0px 0px;
+}
+
+.text1 {
+  font-size: 24px;
+  font-family: 'RubikRegular';
+  /* position: absolute; */
+  color: rgb(0, 0, 0);
+  width: 672px;
+  height: 54px;
+  margin: 24px 0px 0px 0px;
+}
+
+.text2 {
+  font-size: 36px;
+  font-family: 'RubikBold';
+  /* position: absolute; */
+  color: rgb(0, 0, 0);
+  width: 416px;
+  height: 24px;
+  margin: 120px 0px 0px 0px;
+}
+
+.text3 {
+  font-size: 18px;
+  font-family: 'RubikRegular';
+  /* position: absolute; */
+  color: rgb(0, 0, 0);
+  width: 416px;
+  height: 42px;
+  margin: 16px 0px 0px 0px;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  margin: 0px 0px 0px 64px;
+}
+
+@media screen and (max-width: 1400px) {
+  .h1 {
+    width: 720px;
+    font-size: 72px;
+  }
+
+  .text1 {
+    width: 416px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .h1 {
+    width: fit-content;
+    font-size: 39px;
+    margin: 32px 0px 0px 0px;
+  }
+
+  .text1 {
+    font-size: 21px;
+    width: fit-content;
+    height: fit-content;
+    margin: -200px 0px 0px 0px;
+  }
+
+  .text2 {
+    font-size: 24px;
+    width: fit-content;
+    height: fit-content;
+    margin: 120px 0px 0px 0px;
+  }
+  
+  .text3 {
+    font-size: 21px;
+    width: fit-content;
+    height: fit-content;
+    margin: 16px 0px 0px 0px;
+  }
+}

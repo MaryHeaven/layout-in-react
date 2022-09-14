@@ -1,0 +1,90 @@
+.nav {
+  background-color: black;
+  height: 80px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  list-style-type: none;
+}
+
+a {
+  color: #fff !important;
+  text-decoration: none
+}
+
+.cicle {
+  background-color: #FCB500;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+  position: absolute;
+  float: right;
+  margin: 19px 0px 0px 20px;
+}
+
+.icon_basket {
+  position: relative;
+  width: 40px;
+  height: 37px;
+}
+
+.basket {
+  position: absolute;
+}
+
+.mobile_btn {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .mobile_btn {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 27px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    left: -100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    z-index: 10;
+    transition: left 1s;
+  }
+
+  .active {
+    left: 0;
+  }
+
+  .menu a {
+    font-size: 28px;
+  }
+
+  li {
+    margin-top: 15px;
+  }
+}
